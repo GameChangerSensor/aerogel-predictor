@@ -4,7 +4,7 @@ import joblib
 from tensorflow.keras.models import load_model
 
 # ✅ 모델 및 스케일러 로드 (compile=False로 에러 방지)
-model = load_model("mlp_model_3to3.keras", compile=False)
+model = load_model("saved_model", compile=False)
 scaler_X = joblib.load("scaler_X.pkl")
 scaler_y = joblib.load("scaler_y.pkl")
 
